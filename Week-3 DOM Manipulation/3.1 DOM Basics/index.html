@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -17,5 +17,28 @@
 </div>
 
 
+</body>
+</html> -->
+
+
+
+<!-- Craete an Todo App -->
+
+<html>
+
+<body>
+    <input type="text"></input>
+    <button onclick="addTodo()">Add Todo</button>
+    <script>
+        function addTodo(){
+            const inputEL = document.querySelector("input");
+            const value = inputEL.value //extract innervalue 
+
+            const newDivEl = document.createElement("div");
+            newDivEl.innerHTML = value;
+
+            document.querySelector("body").appendChild(newDivEl)
+        }
+    </script>
 </body>
 </html>
